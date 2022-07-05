@@ -60,6 +60,9 @@ const _sfc_main = {
     }
   },
   watch: {
+    modelValue() {
+      this.textareaContent = this.modelValue;
+    },
     textareaContent() {
       this.$emit("update:modelValue", this.textareaContent);
       this.resize();
