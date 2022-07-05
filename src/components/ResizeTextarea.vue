@@ -94,6 +94,9 @@ export default {
     },
   },
   watch: {
+    modelValue() {
+      this.textareaContent = this.modelValue;
+    },
     textareaContent() {
       /**
        * update modelValue event.
